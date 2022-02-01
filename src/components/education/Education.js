@@ -5,6 +5,14 @@ import { type } from "@testing-library/user-event/dist/type";
 const data = [
   {
     type: "university",
+    title: "Full Stack Development with React Specialization",
+    subtitle: "Coursera - The Hong Kong University of Science and Technology",
+    year: "2021 - 2021",
+    side: "left",
+    detials: "details",
+  },
+  {
+    type: "university",
     title: "Post Graduate Diploma in Comptuer and Information Science",
     subtitle: "Auckland University of Technology, New Zealand",
     year: "2015 - 2015",
@@ -35,12 +43,12 @@ const data = [
 const Education = () => {
   return (
     <div className="e">
-      <div className="e-title" id="education">Education & Certifications</div>
+      <div className="e-title" id="education">Degrees and Certifications</div>
       <div className="timeline-wrapper">
-        {data.map(item => {
+        {data.map((item,index) => {
          const {type, title, subtitle, year, side, details, end } = item;
           return (
-            <Timeline
+            <Timeline key={index}
               type={type}
               title={title}
               subtitle={subtitle}

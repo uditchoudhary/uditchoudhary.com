@@ -18,7 +18,7 @@ const Intro = () => {
                 </div>
               </div>
               <div className="i-desc">
-                I Build Things For The Web
+                I Build and Test Things For The Web
                 <br /> I'm a software engineer specializing in building
                 exceptional digital experiences. Currently, I'm focused on
                 learning MERN Stack
