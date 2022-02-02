@@ -32,7 +32,10 @@
     position: absolute;
     top: 50px;
     left: 50px;
-    background-color: #333;
+    /* background-color: #333; */
+      background: #8360c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8360c3, #2ebf91); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8360c3, #2ebf91); 
 }
 
 .a-img {

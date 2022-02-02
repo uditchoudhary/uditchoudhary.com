@@ -6,32 +6,45 @@
 .c-bg {
   height: 100%;
   width: 20px;
-  background-color: #59b256;
+  /* background-color: #59b256; */
+  background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
   position: absolute;
 }
 
 .c-wrapper {
   padding: 50px;
   display: flex;
+  flex-direction: column;
 }
 
 .c-left {
-  flex: 1;
+  height: fit-content;
 }
-
+.c-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
 .c-right {
-  flex: 1;
+  height: 70vh;
+  padding-top: 20px;
 }
 
 .c-title {
-  font-size: 60px;
+  font-size: 30px;
   width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
 .c-info-item {
   display: flex;
   align-items: center;
-  margin: 50px 0;
+  justify-content: center;
+  margin: 30px 0;
   font-weight: 300;
   width: 70%;
 }
@@ -44,18 +57,19 @@
 
 .c-desc {
   font-weight: 200;
+  text-align: center;
 }
 
 form {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
 }
 
 input {
-  width: 60%;
+  width: 40%;
   height: 50px;
   border: none;
   border-bottom: 2px solid black;
@@ -65,7 +79,7 @@ input {
 }
 
 textarea {
-  width: 100%;
+  width: 40%;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
@@ -74,7 +88,10 @@ textarea {
 button {
   border: none;
   padding: 15px;
-  background-color: #59b256;
+  /* background-color: #59b256; */
+  background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
   color: white;
   font-weight: 500;
   cursor: pointer;
@@ -90,7 +107,10 @@ button {
     font-size: 25px;
     width: 100%;
   }
+  .c-info{
+    flex-direction: column;
 
+  }
   .c-info-item {
     margin: 10px 0px;
     width: 100%;
@@ -113,5 +133,8 @@ form{
 input {
   width: 80%;
   height: 40px;
+}
+textarea {
+  width: 80%;
 }
 }
