@@ -12,7 +12,6 @@ function App() {
   const theme = useContext(ThemeContext)
   const darkMode = theme.state.darkMode;
 
-  console.log(darkMode)
   return (
     <div
       style={{
