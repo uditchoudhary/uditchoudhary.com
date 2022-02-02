@@ -9,14 +9,13 @@ const ProjectList = () => {
           <div className="pl-texts">
             <h1 className="pl-title">Projects I have worked on!</h1>
             <div className="pl-desc">
-              eque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit..
+              I have made sure the following client could deliver good customer experiences
             </div>
           </div>
           <div className="pl-list">
               {
                   data.map(item => {
-                       return <Project key={item.id} img={item.img} link={item.link}/>
+                       return <Project key={item.id} img={item.img} link={item.link} company={item.company}/>
                   })
               }
           </div>
