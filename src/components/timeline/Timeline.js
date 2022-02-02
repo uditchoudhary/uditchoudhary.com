@@ -11,8 +11,8 @@ const Timeline = ({ year, title, type, subtitle, side, end, details }) => {
       <div className="wrapper">
         <div className="center-line">
           {end && (
-            <a href="#education" class="scroll-icon">
-              <i class="fas fa-caret-up"></i>
+            <a href="#education" className="scroll-icon">
+              <i className="fas fa-caret-up"></i>
             </a>
           )}
         </div>

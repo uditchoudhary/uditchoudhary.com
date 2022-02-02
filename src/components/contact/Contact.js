@@ -9,14 +9,15 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
   const handleFormSubmit = (event) => {
     event.preventDefault();
     emailjs
       .sendForm(
-        "service_4jtsgrk",
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
         "template_2afgs2a",
         formRef.current,
-        "user_w5jiRcVePCVkesL7odrzX"
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {

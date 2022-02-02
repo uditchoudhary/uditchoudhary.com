@@ -13,7 +13,7 @@ const About = () => {
           <div className="a-left">
             <div
               className="a-card bg"
-              style={{ "background-color": darkMode && "#d0f4b6" }}
+              style={{ "backgroundColor": darkMode && "#d0f4b6" }}
             ></div>
             <div className="a-card">
               <img src={me} alt="profile" className="a-img" />
