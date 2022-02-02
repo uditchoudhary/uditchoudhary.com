@@ -4,6 +4,7 @@ import ProjectList from "./components/projectList/ProjectList";
 import Education from "./components/education/Education";
 import Jobs from "./components/jobs/Jobs";
 import Toggle from "./components/toggle/Toggle";
+import Contact from "./components/contact/Contact";
 import { useContext } from "react";
 import { ThemeContext } from "./context";
 
@@ -13,14 +14,20 @@ function App() {
 
   console.log(darkMode)
   return (
-   <div style={{"backgroundColor": darkMode? "black" : "white", "color": darkMode && "white"}}>
-   <Toggle/>
-    <Intro/>
-    <About/>
-    <Education/>
-    <Jobs/>
-    {/* <ProjectList/> */}
-   </div>
+    <div
+      style={{
+        backgroundColor: darkMode ? "black" : "white",
+        color: darkMode && "white",
+      }}
+    >
+      <Toggle />
+      <Intro />
+      <About />
+      <ProjectList/>
+      <Education />
+      <Jobs />
+      <Contact />
+    </div>
   );
 }
 

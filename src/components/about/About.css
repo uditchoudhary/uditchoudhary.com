@@ -77,6 +77,25 @@
     justify-content: space-between;
 }
 
-.a-award-desc{
+
+@media screen and (max-width: 480px) {
+    .a {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;;
+        height: fit-content;
+    }
+    .a-left {
+        width: 100%;
+    }
+
+    .a-card.bg,.a-award,.a-img,.a-card {
+        display: none;
+    }
+
+    .a-right {
+        padding: 20px;
+    }
 
 }
