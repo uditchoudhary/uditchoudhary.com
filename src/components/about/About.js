@@ -1,14 +1,20 @@
 import "./About.css"
 import me from "../../img/profileSide.png"
 import award from "../../img/award.jpg"
+import { useContext } from "react";
+import { ThemeContext } from "../../context"
 
 const About = () => {
-
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
     return (
       <>
         <div className="a">
           <div className="a-left">
-            <div className="a-card bg"></div>
+            <div
+              className="a-card bg"
+              style={{ "background-color": darkMode && "#d0f4b6" }}
+            ></div>
             <div className="a-card">
               <img src={me} alt="profile" className="a-img" />
             </div>
@@ -22,7 +28,7 @@ const About = () => {
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. 
+              electronic typesetting, remaining essentially unchanged.
             </p>
             <div className="a-award">
               <img className="a-award-img" src={award} alt="" />

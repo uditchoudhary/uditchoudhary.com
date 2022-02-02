@@ -1,6 +1,11 @@
-import "./Timeline.css"
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
+import "./Timeline.css";
 
 const Timeline = ({ year, title, type, subtitle, side, end, details }) => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <>
       <div className="wrapper">
@@ -12,8 +17,11 @@ const Timeline = ({ year, title, type, subtitle, side, end, details }) => {
           )}
         </div>
         <div className={`row ${side}`}>
-          <section>
-            <i className={`icon fas fa-${type}`}></i>
+          <section style={{ color: "black" }}>
+            <i
+              className={`icon fas fa-${type}`}
+              style={{ background: darkMode && "white", color: darkMode && "black"}}
+            ></i>
             <div className="details">
               <span className="title ">{title}</span>
               <span className="subtitle ">{subtitle}</span>
