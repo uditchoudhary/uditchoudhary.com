@@ -1,4 +1,5 @@
 import "./Intro.css";
+import { Typewriter } from "react-simple-typewriter";
 import profile from "../../img/profile-image.png"
 
 const Intro = () => {
@@ -10,12 +11,26 @@ const Intro = () => {
               <h2 className="i-intro">Hello, My name is</h2>
               <h1 className="i-name">Udit Choudhary</h1>
               <div className="i-title">
-                <div className="i-title-wrapper">
-                  <div className="i-title-item">Automation Test Engineer</div>
+                {/* <div className="i-title-wrapper"> */}
+                  <Typewriter
+                    words={[
+                      "Automation Test Engineer",
+                      "Front End Developer",
+                      "MERN Stack Learner",
+                      "Scrum Master",
+                    ]}
+                    loop={0}
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                    delaySpeed={2000}
+                  />
+                  {/* <div className="i-title-item">Automation Test Engineer</div>
                   <div className="i-title-item">Front End Developer</div>
                   <div className="i-title-item">MERN Stack Learner</div>
-                  <div className="i-title-item">Scrum Master</div>
-                </div>
+                  <div className="i-title-item">Scrum Master</div> */}
+                {/* </div> */}
               </div>
               <div className="i-desc">
                 I Build and Test Things For The Web

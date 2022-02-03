@@ -36,9 +36,9 @@
 .i-title{
     height: 50px;
     overflow: hidden;
-}
+    font-size: 30px;}
 
-.i-title-wrapper {
+/* .i-title-wrapper {
     height: 100%;
     animation: move 8s ease-in-out infinite alternate;
 }
@@ -54,17 +54,16 @@
         transform: translateY(-150px);
     }
     
-}
+} */
 
-.i-title-item {
+/* .i-title-item {
     height: 50px;
     font-size: 30px;
     font-weight: bold;
     color: #0093E9;
-/* background-image: whi; */
     display: flex;
     align-items: center;
-}
+} */
 
 .i-img {
     width: 100%;
