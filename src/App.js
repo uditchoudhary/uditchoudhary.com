@@ -22,7 +22,7 @@ function App() {
       <Toggle />
       <Intro />
       <About />
-      {/* <ProjectList/> */}
+      <ProjectList/>
       <Education />
       {/* <Jobs /> */}
       <Contact />
