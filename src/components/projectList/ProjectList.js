@@ -9,7 +9,7 @@ const ProjectList = () => {
           <div className="pl-texts">
             <h1 className="pl-title">Projects I have worked on!</h1>
             <div className="pl-desc">
-              I have made sure the following client could deliver good customer experiences
+              I have made sure the following clients could deliver good customer experiences
             </div>
           </div>
           <div className="pl-list">

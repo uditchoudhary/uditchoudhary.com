@@ -46,8 +46,8 @@ const Contact = () => {
           <h1 className="c-title">Connect to discuss more</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <i className="fas fa-phone c-icon"></i> IN: +64-226911020 <br />{" "}
-              NZ: +91-9354429082
+              <i className="fas fa-phone c-icon"></i> NZ: +64-226911020 <br />{" "}
+              IN: +91-9354429082
             </div>
             <div className="c-info-item">
               <i className="fas fa-envelope-open-text c-icon"></i>{" "}

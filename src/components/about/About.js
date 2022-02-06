@@ -9,11 +9,11 @@ const About = () => {
   const darkMode = theme.state.darkMode;
     return (
       <>
-        <div className="a">
+        <div className="a" id="aboutme">
           <div className="a-left">
             <div
               className="a-card bg"
-              style={{ "backgroundColor": darkMode && "#8360c3" }}
+              style={{ backgroundColor: darkMode && "#8360c3" }}
             ></div>
             <div className="a-card">
               <img src={me} alt="profile" className="a-img" />
